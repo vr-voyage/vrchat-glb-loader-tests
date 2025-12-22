@@ -1,0 +1,21 @@
+{
+  "name": "io.github.vr-voyage.vrchat.glb-loader.tests",
+  "displayName": "Voyage 3D Model Loader Tests suite",
+  "version": "1.0.0",
+  "description": "Regression tests for my 3D Model Loader. While these run automatically within Unity, it still requires a Unity Installation and cannot be called 'Automated' tests per se.",
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.worlds": ">=3.5.2",
+    "io.github.vr-voyage.vrchat.glb-loader": ">=1.0.0"
+  },
+  "repository": "https://github.com/vr-voyage/vrchat-glb-loader",
+  "author": {
+    "name": "Voyage Voyage",
+    "email": "voyage@dontcontactmebymail.com",
+    "url": "https://github.com/vr-voyage"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "unity": "2022.3",
+  "unityRelease": "6f1"
+}
