@@ -28,13 +28,11 @@ public class TestGLBLoader : UdonSharpBehaviour
     public void CurrentTestFailed()
     {
         testRunning = false;
-        Debug.LogError($"Test {currentTestIndex} failed");
     }
 
     public void CurrentTestPassed()
     {
         testRunning = false;
-        Debug.Log($"<color=lime>Test {currentTestIndex} passed !</color>");
         NextTest();
     }
 
@@ -61,7 +59,6 @@ public class TestGLBLoader : UdonSharpBehaviour
                 NextTest();
             }
 
-            Debug.Log($"Clearing previous state before running test {currentTestIndex}");
             testedLoader.Clear();
 
             test.loader = testedLoader;
@@ -99,7 +96,7 @@ public class TestGLBLoader : UdonSharpBehaviour
 
     void RunTests()
     {
-        Debug.Log("<color=orange>Running the tests !</color>");
+        Debug.Log("<color=orange>GLBLoaderTest : Running test suite</color>");
     }
 
     // Start is called before the first frame update

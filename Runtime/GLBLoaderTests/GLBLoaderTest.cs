@@ -40,12 +40,15 @@ public abstract class GLBLoaderTest : UdonSharpBehaviour
     void TestFailed()
     {
         error = true;
+        Debug.LogError($"{gameObject.name} : FAIL");
         testRunner.SendCustomEvent(nameof(TestGLBLoader.CurrentTestFailed));
     }
 
     void TestComplete()
     {
+        Debug.Log($"{gameObject.name} : PASS");
         testRunner.SendCustomEvent(nameof(TestGLBLoader.CurrentTestPassed));
+        
     }
 
     public abstract void Test();
@@ -61,6 +64,6 @@ public abstract class GLBLoaderTest : UdonSharpBehaviour
         
         loader.stateReceivers = new UdonSharpBehaviour[] { this };
         loader.StartParsingGlb(testData.bytes);
-        Debug.Log($"Started to parse GLB for {gameObject.name}");
+        Debug.Log($"{gameObject.name} : START");
     }
 }

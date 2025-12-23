@@ -336,7 +336,7 @@
                     "specVersion": "1.0",
                     "transparentWithZWrite": true,
                     "renderQueueOffsetNumber": 9,
-                    "shaderColorFactor": [0.25,0.5,0.75],
+                    "shadeColorFactor": [0.25,0.5,0.75],
                     "shadeMultiplyTexture":
                     { 
                         "index": 2,
